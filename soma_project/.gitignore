@@ -1,0 +1,14 @@
+# Build
+build/
+
+# Object files
+*.o
+
+# Executáveis
+main
+
+# Mac debug symbols
+*.dSYM
+
+# VS Code
+.vscode/
