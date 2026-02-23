@@ -2,20 +2,31 @@
 #include "funcao.h"
 
 int main() {
-    // Exemplo 1: Array com 3 elementos
-    int numeros1[] = {10, 20, 30};
-    int resultado1 = funcao(numeros1, 3);
-    printf("Soma de 3 números: %d\n", resultado1);
+    int tamanho;
+    int valores[100];  // Array com capacidade para 100 números
     
-    // Exemplo 2: Array com 5 elementos
-    int numeros2[] = {1, 2, 3, 4, 5};
-    int resultado2 = funcao(numeros2, 5);
-    printf("Soma de 5 números: %d\n", resultado2);
+    // Pede ao utilizador quantos números quer inserir
+    printf("Quantos números quer inserir? ");
+    scanf("%d", &tamanho);
     
-    // Exemplo 3: Array com 10 elementos
-    int numeros3[] = {5, 10, 15, 20, 25, 30, 35, 40, 45, 50};
-    int resultado3 = funcao(numeros3, 10);
-    printf("Soma de 10 números: %d\n", resultado3);
+    // Verifica se o tamanho é válido
+    if (tamanho <= 0 || tamanho > 100) {
+        printf("Erro: Insira um número entre 1 e 100\n");
+        return 1;
+    }
+    
+    // Lê cada número do utilizador
+    printf("Insira os %d números:\n", tamanho);
+    for (int i = 0; i < tamanho; i++) {
+        printf("Número %d: ", i + 1);
+        scanf("%d", &valores[i]);
+    }
+    
+    // Chama a função com os valores inseridos
+    int resultado = funcao(valores, tamanho);
+    
+    // Mostra o resultado
+    printf("\nResultado da função: %d\n", resultado);
     
     return 0;
 }
