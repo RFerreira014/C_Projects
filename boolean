@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    bool condição = true;
+    if (condição) {
+        printf("A condição é verdadeira %s\n", condição);
+    } else {
+        printf("A condição é falsa %s\n", condição);
+    }
+    return 0;
+}
