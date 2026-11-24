@@ -4,7 +4,7 @@ int main() {
 
     int V[] = {2, 33, 4, 2, 21, 87, 66, 20 };
     int inicio = 3;
-    int total = ;
+    int total = 8;
     int i;
     int tamanho = total - inicio;
     int *p = &V[inicio];
