@@ -8,8 +8,14 @@ int main() {
     int i;
     int tamanho = total - inicio;
     int *p = &V[inicio];
-    for( i=0; i < tamanho; i++){
-
-    printf("o subvetor é: %d\n", p[i]);}
+     printf(" o meu vetor é { ");
+    for( i=inicio; i < tamanho; i++){
+    if (i < tamanho - 1) {
+        printf(", %d", p[i]);
+    } 
+    if (i == tamanho - 1) {
+        printf("}\n");
+    }
+}
     return 0;
 }
