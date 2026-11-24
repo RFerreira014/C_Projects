@@ -7,9 +7,9 @@ int main() {
     double e = 2.745678975357754;
     printf("Ola Mundo!\n");
     printf("eu sou o rui tenho %d anos\n", age);
-    printf("em media sao %.4f\n", media);
-    printf("o valor pi é %.14lf\n", pi);
-    printf("o valor de euller é %.10lf", e);
+    printf("em media sao %.2f\n", media);
+    printf("o valor pi é %.10lf\n", pi);
+    printf("o valor de euller é %.8lf", e);
     
     return 0;
 }
